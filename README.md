@@ -23,7 +23,13 @@ https://codingdojo-dallas.slack.com/files/katemoc/F427ZQZPY/github_workflow_v4.p
 [MEAN - Socket.IO](https://youtu.be/6xMJDs9vkio "MEAN - Socket.IO") <br>
 [MEAN - MongoDB](https://youtu.be/0tezVAYzcDc "MEAN - MongoDB") <br>
 [MEAN - Mongoose Messageboard](https://youtu.be/iPDi2LYO2no "MEAN - Mongoose Messageboard") <br>
-[MEAN - Login & Registration](https://youtu.be/8t0HHbHQv5U "MEAN - Login & Registration") <br>
+[MEAN - Intro to TypeScript and Angular (Part 1)](https://youtu.be/Z_C8ZLkEICI "MEAN - Intro to TypeScript and Angular (Part 1)") <br>
+[MEAN - Intro to TypeScript and Angular (Part 2)](https://youtu.be/gB8VFqAI4hc "MEAN - Intro to TypeScript and Angular (Part 2)") <br>
+[MEAN - Angular Event Binding and Forms](https://youtu.be/tFClAHE503M "MEAN - Angular Event Binding and Forms") <br>
+[MEAN - Angular Passing Data Through Components](https://youtu.be/mFcEX0JApNE "MEAN - Angular Passing Data Through Components") <br>
+[MEAN - Angular Services](https://youtu.be/0-t2dU11cvk "MEAN - Angular Services") <br>
+[MEAN - Angular Routing](https://youtu.be/5KSyo4BFqCU "MEAN - Angular Routing") <br>
+[MEAN - Connecting Angular to Express](https://youtu.be/5bnZ68Z14Bg "MEAN - Connecting Angular to Express") <br>
 
 # Resources
 [W3Schools - JavaScript](https://www.w3schools.com/js/ "W3Schools - JavaScript") <br>
@@ -32,6 +38,8 @@ https://codingdojo-dallas.slack.com/files/katemoc/F427ZQZPY/github_workflow_v4.p
 [Socket.IO Documentation](https://socket.io/docs/ "Socket.IO Documentation") <br>
 [MongoDB Documentation](https://docs.mongodb.com/manual/ "MongoDB Documentation") <br>
 [MongooseJS Documentation](http://mongoosejs.com/docs/guide.html "MongooseJS Documentation") <br>
+[TypeScript Documentation](https://www.typescriptlang.org/docs/home.html "TypeScript Documentation") <br>
+[Angular Documentation](https://angular.io/docs "Angular Documentation") <br>
 
 # Schedule
 
