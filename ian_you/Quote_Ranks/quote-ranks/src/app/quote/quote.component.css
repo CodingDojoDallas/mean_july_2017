@@ -1,0 +1,46 @@
+.container{
+    border: 1px solid black;
+    width: 500px;
+    height: 150px;
+    padding : 10px;
+    margin-bottom: 5px;
+}
+.quote{
+    display: inline-block;
+    width: 320px;
+
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.votes{
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: top;
+}
+.buttons{
+    text-align: center;
+    width: 106px;
+    display: inline-block;
+
+}
+
+button{
+    width: 100px;
+}
+
+.up{
+    background-color: green;
+}
+
+.down{
+    background-color: red;
+}
+
+.delete{
+    background-color: darkslategrey;
+}
