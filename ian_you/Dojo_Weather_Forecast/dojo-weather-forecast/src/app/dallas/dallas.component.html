@@ -1,0 +1,10 @@
+<h1>Dallas Weather</h1>
+<div> 
+  <p>Humidity: {{ weather_data.main.humidity }}  </p>
+  <p>Temperature (Average): {{ (weather_data.main.temp - 273.15) * 9 / 5 + 32 | number:'1.2-2'}}</p>
+  <p>Temperature (High): {{ ( weather_data.main.temp_max  - 273.15) * 9 / 5 + 32 | number:'1.2-2' }}</p>
+  <p>Temperature (Low): {{ ( weather_data.main.temp_min  - 273.15) * 9 / 5 + 32 | number:'1.2-2'}}</p>
+  <p>Status: {{ weather_data.weather[0].description}}</p>
+</div>
+
+<img src="https://images.pexels.com/photos/274570/pexels-photo-274570.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="dallas">
