@@ -4,10 +4,10 @@ let mongoose = require('mongoose');
 
 let app = express();
 
-app.use(express.static(__dirname+'/static') );
+app.use(express.static(__dirname+'/client/static') );
 app.use(bp.urlencoded({ extended: true}));
 
-app.set('views', __dirname+'/views/');
+app.set('views', __dirname+'/client/views/');
 app.set('view engine' , 'ejs');
 
 
