@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Information about ... <%= rabbit.name %> </h1>
+        <h3><a href="/rabbits/edit/<%= rabbit.id %>">Edit Information</a> </h3>
+        <p>Name: <%= rabbit.name  %> </p>
+        <p>Ear Length: <%= rabbit.ear_length  %> </p>
+        <p>Cuteness Level: <%= rabbit.cuteness_level  %></p>
+        <form action="/rabbits/destroy/<%= rabbit._id%>" method="post">
+            <button type="Submit">Delete</button>
+        </form>
+    </body>
+</html>

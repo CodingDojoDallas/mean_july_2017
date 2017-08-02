@@ -1,0 +1,24 @@
+<div>
+  <h1>Add a Quote</h1>
+  <form #form = "ngForm" 
+  (submit) = "addQuote(new_quote); form.reset()" >
+    <p><textarea name="quote" rows="10" cols="60" 
+      [(ngModel)]="new_quote.quote" minlength="4" 
+      required #quote='ngModel'
+      ></textarea></p>
+
+      <p *ngIf = "quote.invalid && ( quote.touched || quote.dirty )" >Quote needs to have at least 4 characters</p>
+
+    <p><label>Author : </label>
+      <input type="text" name="author" [(ngModel)]="new_quote.author" minlength="1" required ngModel #author='ngModel'> </p>
+      <p *ngIf = "author.invalid && ( author.touched || author.dirty )" >Author needs to have at least 1 character</p>
+    <p><input type="submit" value="Add Quote" [disabled]= "!form.valid"></p>
+  </form>
+</div>
+
+<hr>
+<app-quote [quotes] = 'quotes' 
+(addVote)="voteUp($event)" 
+(subtractVote)="voteDown($event)" 
+(deleteVote)="voteDelete($event)">
+</app-quote>

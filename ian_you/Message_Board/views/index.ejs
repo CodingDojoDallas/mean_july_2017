@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Dojo Message Board</h1>
+    <hr>
+    <div style="padding-left : 15px">
+        <form action ="/messages/create" method='POST'>
+            <p><label>Name: </label><input type="text" name="name"></p>
+            <p><label>Message: <textarea name='content' rows="1" cols="60"></textarea></label></p>
+            <p><input type="submit" value="Add Message"></p>
+        </form>
+        <hr>
+    </div>
+
+    <div style="padding-left : 30px">
+        <h2>Messages</h2>
+         <% for (let message of messages) { %>
+            <h3>Name: <%= message.name %> </h3>
+            <h4>Message: <%= message.content %></h4>
+            <div style="padding-left : 30px">
+                <h3>Comments</h3>
+                <% for (let comment of message.comments) { %>
+                <p>Name: <%= comment.name %> </p>
+                <p>Comment: <%= comment.content %> </p>
+                <% } %>
+            </div>
+            <hr>
+            <div style="padding-left : 30px">
+                <form action="comments/create/<%= message._id %>" method="POST">
+                    <p><label>Name: </label><input type="text" name="name"></p>
+
+                    <p><label>Comment: </label><textarea rows="1" cols="60" name="content"></textarea></p>
+                    
+                    <p><input type="submit" value="Add Comment"></p>
+
+                </form>
+            </div>
+        <% } %> 
+    </div>
+</body>
+</html>

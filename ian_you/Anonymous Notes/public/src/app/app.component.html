@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>Anonymous Notes</h1>
+  <form #noteForm = 'ngForm' (submit)='createNote(newNote); noteForm.form.reset();'>
+    <label>Note: </label>
+    <input type="text" name="content" [(ngModel)]="newNote.content">
+    <input type="submit" value="Add Note">
+  </form>
+</div>
+<hr>
+
+<div *ngFor ="let note of notes">
+  <p>{{ note.createdAt | date : 'medium' }} </p>
+  <h4> Note : {{ note.content }} </h4>
+</div>
+
